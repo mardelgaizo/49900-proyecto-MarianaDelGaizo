@@ -1,0 +1,2 @@
+1. Home img: tiene transparencia y también me afecta en el menu
+2. Footer: MALBA me queda centrado

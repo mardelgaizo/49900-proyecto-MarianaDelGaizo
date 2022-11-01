@@ -1,0 +1,205 @@
+*{
+    font-family: 'Inter Tight', sans-serif;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    }
+
+    #body_grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+header{
+    display: grid;
+
+    grid-template-columns: 1fr;
+}
+h1, h2, h3, h4, h5, h6, .button {
+    text-transform: uppercase;
+}
+
+.h1__home {
+    display: inline-block;
+    position: absolute;
+    font-weight: 800;
+    font-size: 100px;
+}
+
+.nav__home ul{
+    padding: 100px 80px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+
+.nav__home ul li {
+    padding: 18px 0px;
+    font-size: 20px;
+}
+
+.nav__home ul li a{
+    color:black;
+    font-weight: 600;
+}
+
+.nav__home ul li ul {
+    display: none;
+   
+}
+
+.nav__home ul li ul li:hover ul{
+    display: block;
+}
+
+.nav__home ul li ul{
+    position: absolute;
+    display: none;
+    margin-left: none;
+}
+
+.divImg {
+    width: 100%;
+    opacity: 0.7;
+}
+
+#divImg__img {
+    width: 100%;
+}
+
+
+.grid-exposiciones {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.grid-exposiciones1, .grid-exposiciones2, .grid-exposiciones3 {
+    width: 100%;
+}
+
+.exposiciones__img {
+    width: 100%;
+}
+
+.section__exposiciones__artista__muestra, .section__exposiciones__fecha__sala {
+    text-align: center;
+    margin: 0;
+    padding: 3%;
+}
+
+.section__exposiciones__artista__muestra {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+
+.section__suscribirse {
+    font-size: 200%;
+    font-weight: 100;
+    padding: 8;
+    
+}
+
+#id__suscribirse {
+    display: flex;
+    justify-content: center;
+}
+
+#input__suscribirse{
+    margin-left: 3%;
+    }
+
+#btn__enviar {
+    padding: 0.8%;
+    font-weight: 700;
+    margin-left: 3%;
+}
+
+#sponsor {
+    padding-left: 10%;
+    opacity: 0.5;
+}
+
+.divSponsors {
+    margin: 3% 10% 3% 10%;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+footer {
+    background-color:lightgray; 
+    padding: 40px; 
+    font-size: 85%;
+}
+
+.divImgFooter {
+    padding: none;
+    margin-bottom: 2%;
+    opacity: 0.7;
+}
+
+/* MOBILE FIRST*/
+
+
+.nav__home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    
+}
+
+.grid-exposiciones1, .grid-exposiciones2, .grid-exposiciones3 {
+    justify-self: center;
+}
+
+.section__suscribirse {
+    justify-self: center;
+}
+
+#sponsor {
+    justify-self: center;
+}
+
+.divSponsors {
+    justify-self: center;
+}
+
+@media (max-width: 768px) {
+    .grid-exposiciones {
+        display: grid;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }   
+    .divSponsors {
+        margin: 3% 10% 3% 10%;
+        display: grid;
+        align-items: center;
+    
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 320px) {
+    .grid-exposiciones {
+        display: grid;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }   
+    .divSponsors {
+        margin: 3% 10% 3% 10%;
+        display: grid;
+        align-items: center;
+    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}

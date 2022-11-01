@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo de Arte Latinoamericano de Buenos Aires - MALBA</title>
+    <link rel="icon" type="image/png" sizes="16x16" href=""> <!--falta el favicon-->
+    <link rel="stylesheet" href="estilos-entrega1/estilos-entrega1.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">     <!--PONER FAVICON-->
+
+</head>
+<body id="body_grid">
+
+    <header>
+        <h1 class="h1__home">MALBA</h1>
+        <div>
+            <nav class="nav__home">
+                <ul>
+                    <!--position relative + z-index sobre la foto-->
+                    <li> <a href="index.html">Inicio</a></li>
+                    <li> <a href="pages/visitar.html">Visitar</a></li>
+                    <li> <a href="pages/comprar-entradas.html">Comprar entradas</a></li>
+                    <li> <a href="pages/exposiciones.html">Exposiciones</a>
+                        <ul class="d-none">
+                            <li>pasadas</li>
+                            <li>presentes</li>
+                            <li>futuras</li>
+                        </ul>
+                    </li>
+                    <li> <a href="pages/agenda.html">Agenda</a></li>
+                    <li> <a href="pages/coleccion-online.html">Colección Online</a></li>
+                </ul>
+
+                <!--https://developer.mozilla.org/es/docs/Web/CSS/@keyframes para que aparezca mas tarde-->
+            
+            </nav>
+            <div class="divImg">
+                <img src="images-entrega1/home/malba-home.png" alt="Museo Malba" id="divImg__img"/>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="grid-exposiciones">
+                    <div class="grid-exposiciones1">
+                        <img src="images-entrega1/home/exposiciones-1.png" alt="Exposición Hombre flecha" class="exposiciones__img" />
+                        <div class="grid-exposiciones-information">
+                                <div class="section__exposiciones__artista__muestra">
+                                    <p>Rafael Barradas</p>
+                                    <p class="p_bold">Hombre flecha</p>
+                                </div>
+                                <div class="section__exposiciones__fecha__sala">
+                                    <p class="p_bold">21.09.22 - 14.02.22</p>
+                                    <p>Sala 5, nivel 2</p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-exposiciones2">
+                            <img src="images-entrega1/home/exposiciones-2.png" alt="Exposicion Schhhiii" class="exposiciones__img"/>
+                            <div class="section__exposiciones__artista__muestra">
+                            <p>Anna Maria Maiolino</p>
+                            <p class="p_bold">Schhhiii...</p>
+                            </div>
+                        <div class="section__exposiciones__fecha__sala">
+                            <p class="p_bold">15.07.22 - 14.10.22</p>
+                            <p>Sala 2, nivel -1</p>
+                        </div>
+                    </div>
+
+                    <div class="grid-exposiciones3">
+                            <img src="images-entrega1/home/exposiciones-3.png" alt="Exposición Fluxus"class="exposiciones__img" />
+                            <div class="section__exposiciones__artista__muestra">
+                            <p class="p_bold">Fluxus en Alemania</p>
+                            </div>
+                            <div class="section__exposiciones__fecha__sala">
+                            <p class="p_bold">17.06.22 - 14.02.22</p>
+                            <p>Sala 1, nivel 3</p>
+                        </div>
+                    </div>
+                    
+        </section>
+    
+    
+
+    <!-- <section id="home-agenda">
+        <h2>Esta semana en el MALBA</h2>
+            <div>
+             <p class="agenda__dia">Miércoles 25</p>   
+             <p class="agenda__hora">18:00</p>
+             <p class="categoria-cine">Cine</p> COLOR + MAYUSCULA EN CSS
+             <p class="actividad-nombre">Subida al cielo, de Luis Buñuel</p>
+             <p class="actividad-descripcion">En un poblado costeño, el joven Oliverio debe interrumpir su viaje de bodas porque su madre, doña Ester, está moribunda. La madre pide a Oliverio que vaya a Petatlán a buscar al licenciado Figueroa, para que redacte su testamento.</p>
+             <a href="pages/agenda.html" class="button">ver más</a>   
+            </div>
+
+            <div>
+             <p class="agenda__hora">19:00</p>
+             <p class="categoria-programas">Programas publicos</p> COLOR + MAYUSCULA EN CSS
+             <p class="actividad-nombre">Encuentros en sala: Transformar la palabra </p>
+             <p class="actividad-descripcion">Un diálogo donde se abordarán aspectos sobre la obra y la trayectoria de Mariela Scafati, referente del arte argentino contemporáneo que, desde el principio de este siglo, participa en proyectos colectivos y de colaboración vinculados a la serigrafía, la educación, la radio y el teatro.</p>
+             <a href="pages/agenda.html" class="button">ver más</a>   
+             </div>
+
+             <div>
+                <p class="dia">Jueves 26</p>   
+                <p class="hora">20:00</p>
+                <p class="categoria-cine">Cine</p> COLOR + MAYUSCULA EN CSS
+                <p class="actividad-nombre">El hombre equivocado, de Alfred Hitchcock</p>
+                <p class="actividad-descripcion">Parece inverosímil, pero la historia ocurrió de veras. En las primeras escenas Henry Fonda es detenido por un asalto que no cometió, y a partir de allí tres testigos lo identifican erróneamente y todo el procedimiento policial y judicial opera en su contra.</p>
+                <a href="agenda.html" class="button">ver más</a>   
+            </div>
+
+            <div>
+                <p class="dia">Viernes 27</p>   
+                <p class="hora">20:00</p>
+                <p class="categoria-literatura">Literatura</p> COLOR + MAYUSCULA EN CSS
+                <p class="actividad-nombre">Curso presencial y en línea: 100 novelas: Diario de lectura del Decamerón de Boccaccio </p>
+                <p class="actividad-descripcion">A lo largo de cinco encuentros vamos a bucear en este clásico de múltiples entradas compuesto por cien historias que se inscriben en el corazón y en los márgenes de la peste negra que sacudió a Europa a mediados del siglo XIV. </p>
+                <a href="agenda.html" class="button">VER MÁS</a>   
+            </div>
+    </section>
+    -->
+    
+        <section class="section__suscribirse">
+            <form method="" id="id__suscribirse">
+            Suscribirse <input type="text" name="" id="input__suscribirse" file style="width: 300px;">
+            <input type="submit" value="Enviar" id="btn__enviar">
+            </form>
+        </section>
+
+        <section>
+            <h2 id="sponsor">Nos acompañan</h2>
+            <div class="divSponsors">
+                <img src="images-entrega1/auspiciantes/alcorta.png" alt="Alcorta Shopping" class="sponsor__marcas"/>
+                <img src="images-entrega1/auspiciantes/bloomberg.png" alt="bloomberg" class="sponsor__marcas"/>
+                <img src="images-entrega1/auspiciantes/cabrales.png" alt="cabrales" class="sponsor__marcas"/>
+                <img src="images-entrega1/auspiciantes/lanacion.png" alt="diario la nacion" class="sponsor__marcas"/>
+                <img src="images-entrega1/auspiciantes/medife.png" alt="medife" class="sponsor__marcas"/>
+                <img src="images-entrega1/auspiciantes/mercedes.png" alt="mercedes benz" class="sponsor__marcas"/>
+                <img src="images-entrega1/auspiciantes/metro.png" alt="radio metro 95.1" class="sponsor__marcas"/>
+                <img src="images-entrega1/auspiciantes/samsung.png" alt="samsung" class="sponsor__marcas"/>
+                
+
+        </section>
+    </main>
+       
+<footer>
+    <div class="divImgFooter">
+        <img src="images-entrega1/home/malba-footer.png" alt="Malba"/>
+    </div>
+    Museo de Arte Latinoamericano Buenos Aires
+    <br>
+    Facebook
+    <i class="fa-brands fa-instagram"></i>
+    <br>
+    Av. Figueroa Alcorta 3415
+    <br>
+    C1425CLA Buenos Aires, Argentina
+    <br>
+    +54 11 4808 6500
+    <br>
+    MALBA 2022
+    <br>
+    © Todos los derechos reservados
+</footer>
+
+</body>    
+</html>
